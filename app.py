@@ -31,7 +31,7 @@ while True:
         angle = detector.findAngle(img,12,14,16)
 
 
-        bar_val = np.interp(angle(38,140),(60,300+60))
+        bar_val = np.interp(angle,(38,140),(60,300+60))
 
         per_val = np.interp(angle,(38,140),(100,0))
 
